@@ -1,0 +1,249 @@
+/*page margins*/
+.row {
+  width: 100%;
+  max-width: 940px;
+  margin: 0 auto;
+  position: relative;
+}
+/*Floaty BG*/
+.eyecatch {
+  position: relative;
+  background: url(img/cats.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  text-align: center;
+  min-height: 600px;
+  letter-spacing: 2px;
+  box-shadow: 0px 0px 20px  #666666 inset;
+  -webkit-box-shadow: 0px 0px 20px  #666666 inset;
+}
+/*Big Title*/
+.title {
+  float:left;
+  position:relative;
+  z-index:2;
+  height:0px;
+  width:100%;
+  text-align:center;
+}
+.title img{
+	height:300px;
+	width:300px;
+	top:10px;
+	position:relative;
+}
+.title h1{
+  font-size: 96px;
+  line-height: 1;
+  color: white;
+  text-shadow: 0px 0px 10px #000000;
+  font-family: 'Poiret One', cursive;
+}
+
+.title h1 span {
+  font-size: 48px;
+  color: #6C6;
+}
+/*Logo*/
+.logo{
+	display:block;
+	float:left;
+	position:relative;
+	top:-9px;
+	width:46px;
+	height:46px;
+	color:rgba(0,0,0,0);
+	background:url(img/logo.png) no-repeat center;
+	background-size:46px 46px;
+}
+/*Generic Box*/
+.box{
+	background: #FFF;
+	color: #000;
+	display: block;
+	letter-spacing: 0px;
+	font-family: "Cardo", serif;
+	box-shadow: 0px 0px 50px  #666666;
+	-webkit-box-shadow: 0px 0px 50px  #666666;
+	position: relative;
+	z-index: 0;
+}
+/*overlay*/
+.overlay{
+	position:fixed;
+	display:none;
+	top:0px;
+	left:0px;
+	height:80%;
+	width:80%;
+	padding:20%;
+	background-color:rgba(255,255,255,0.33);
+}
+/*mission statement*/
+#mission{
+	position: relative;
+	top:-20px;
+	text-align: center;
+	line-height: 1.2;
+}
+#mission h3{
+	line-height: 2;
+}
+/*Read More*/
+#show{
+	width:100%;
+	vertical-align:central;
+	text-align:right;
+	padding:10px 0px;
+}
+#show a{
+	font-family:"Montserrat", sans-serif;
+	font-weight:700;
+	font-size:20px;
+	text-transform:uppercase;
+	transition:color 0.5s;
+}
+#show a:hover{
+	color:#6C6;
+}
+#more{
+	overflow:hidden;
+	visibility: visible;
+	display: block;
+	height: 0px
+}
+
+/*hospital cta*/
+.hospital{
+	padding: 0px 50px 50px;
+	color: rgba(0,0,0, 0);
+}
+.hospital h1{
+	text-shadow: 0px 0px 10px #000000;
+	position:relative;
+	z-index: 2;
+	color: #fff;
+  	font-size: 50px;
+  	line-height: 1.8;
+  	font-family: "Montserrat", sans-serif;
+}
+.hospital div a{
+	display:block;
+	position:relative;
+	z-index:2;
+	font-family: "Montserrat", sans-serif;
+	width: 25%;
+	height: 430px;
+	overflow: hidden;
+	margin: 0% 4%;
+	background-color: #FFF;
+	box-shadow: 3px 3px 10px  #666666;
+	-webkit-box-shadow: 3px 3px 10px  #666666;
+	opacity:1;
+	float:left;
+}
+.hospital div a p{
+	text-align: center;
+	line-height:30px;
+	font-weight: 600;
+	position: relative;
+	top: 0px;
+	left: 0px;
+	z-index: 3;
+	height: 390px;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	transition: top 1s;
+	-webkit-transition: top 1s;
+	display:block;
+}
+.hospital div a p span{
+	display:block;
+	float:left;
+	line-height: 12px;
+	font-size: 11px;
+	font-weight: 100;
+	color: white;
+	overflow: hidden;
+	width: 90%;
+	margin: 5%;
+	height: 80%
+}
+.hospital div a img{
+	opacity:1;
+	width:96%;
+	margin: 2%;
+	transition:opacity 1s;
+	-webkit-transition: opacity 1s;
+}
+.hospital a:hover p{
+	top:-400px;
+}
+/*iframe box*/
+#detail{
+	z-index: 4;
+	float:left;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	width: 100%;
+	display:none;
+	overflow:hidden;
+	background-color: rgba(0, 0, 0, 0.7);
+	opacity: 0;
+}
+#detail iframe{
+	width: 90%;
+	height: 80%;
+	margin: 5%;
+}
+#hide{
+	width: 50px;
+	height: 50px;
+	z-index:5;
+	float:right;
+	position:relative
+}
+/*gallery*/
+.gallery{
+	height: 520px;
+}
+.gallery a{
+	height:25%;
+	float:left;
+	z-index:2;
+}
+.gallery img{
+	height:100%;
+	margin:1%;
+}
+#picture{
+	z-index: 4;
+	float:left;
+	position: absolute;
+	top: 10%;
+	left: 0px;
+	height: 100%;
+	width: 100%;
+	display:none;
+	overflow:hidden;
+	opacity: 0;
+	text-align:center;
+}
+#picture img{
+	height: 90%;
+}
+
+/*footer*/
+footer{
+	text-align:center;
+	font-weight: 300;
+  	-webkit-font-smoothing: antialiased;
+    font-family: "Montserrat", sans-serif;
+}
+footer p{
+	line-height:1.2;
+	margin: 15px 0px;
+}

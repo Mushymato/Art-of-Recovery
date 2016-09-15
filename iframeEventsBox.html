@@ -1,0 +1,157 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>eventsBox</title>
+<link href="theme.css" rel="stylesheet" type="text/css">
+<link href="jquery.jscrollpane.css" rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script type="text/javascript" src="jquery.jscrollpane.min.js"></script>
+<script type="text/javascript" src="jquery.mousewheel.js"></script>
+
+<script>
+function changeContent(idx){
+	idx.replace('#', '')
+	$("#content").fadeOut(200,function(){
+		document.getElementById("content").src = "eventsDetail/event"+idx+".html";
+		$("#content").fadeIn(200);
+	});	
+};
+function changeColor(dom){
+	var aList = document.getElementsByTagName("a");
+	for(i=0; i<aList.length; i++){
+		aList.item(i).style.color = "#888";
+		aList.item(i).style.borderBottomColor = "rgba(0,0,0,0)";
+	}
+	dom.style.color = "#6c6";
+	dom.style.borderBottomColor = "#6c6";
+}
+$(function()
+{
+	var first = document.getElementById("01");
+	changeColor(first);
+	$("#menu").jScrollPane();
+	$("#content").jScrollPane();
+	$("a").click(function(){
+		
+		changeColor(this);
+    	var id = $(this).attr('id');
+		changeContent(id);
+		});
+});
+
+
+</script>
+<style>
+	*{margin:0px;padding:0px}
+	iframe{
+		border:none;
+	}
+	#menu{
+		width:20%;
+		max-height:480px;
+		overflow-x:hidden;
+		overflow-y:scroll;
+		float:left;
+		margin-right:1%;
+	}
+	#content{
+		height:480px;
+		width:75%;
+		float:left;
+	}
+menu *{margin:0px; padding:0px; font-family: 'Montserrat', sans-serif;-webkit-font-smoothing: antialiased;}
+ul{
+	width:100%;
+	display:block;
+	list-style-type:none;
+	float:left;
+}
+li a{
+	position:relative;
+	left:5px;
+	padding-right:5px;
+	border-bottom:rgba(0,0,0,0) solid 4px;
+	border-bottom-left-radius:4px;
+	display:block;
+	text-align:right;
+	text-decoration:none;
+	color:#888;
+	transition:border-top, 0.2s;
+}
+li a:hover{
+	border-bottom-color:#6c6;
+	color:#6C6 !important;
+}
+
+</style>
+
+</head>
+
+<body>
+        <div id="menu">
+			<ul>
+				<li><!--javascript:changeContent(1, this);return false;-->
+					<a href="#" id="01">
+					<h2>Event 01</h2>
+					<h3>Location</h3>
+					<h4>2016/01/01</h4>
+					</a>
+				</li>
+				<li>
+					<a href="#" id="02">
+					<h2>Event 02</h2>
+					<h3>Location</h3>
+					<h4>2016/01/01</h4>
+					</a>
+				</li>
+				<li>
+					<a href="#" id="03">
+					<h2>Event 03</h2>
+					<h3>Location</h3>
+					<h4>2016/01/01</h4>
+					</a>
+				</li>
+				<li>
+					<a href="#" id="04">
+					<h2>Event 04</h2>
+					<h3>Location</h3>
+					<h4>2016/01/01</h4>
+					</a>
+				</li>
+				<li>
+					<a href="#" id="05">
+					<h2>Event 05</h2>
+					<h3>Location</h3>
+					<h4>2016/01/01</h4>
+					</a>
+				</li>
+				<li>
+					<a href="#" id="06">
+					<h2>Event 06</h2>
+					<h3>Location</h3>
+					<h4>2016/01/01</h4>
+					</a>
+				</li>
+				<li>
+					<a href="#" id="07">
+					<h2>Event 07</h2>
+					<h3>Location</h3>
+					<h4>2016/01/01</h4>
+					</a>
+				</li>
+				<li>
+					<a href="#" id="08">
+					<h2>Event 08</h2>
+					<h3>Location</h3>
+					<h4>2016/01/01</h4>
+					</a>
+				</li>
+                <!--dumb scrollfix-->
+                <li><h2>&nbsp;</h2></li>
+			</ul>
+		</div>
+        	<iframe id="content" src="eventsDetail/event01.html"/>
+</body>
+
+</html>

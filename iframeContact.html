@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>eventsBox</title>
+<link href="theme.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script>
+	function formSubmit(name, type) {		
+		subject='Art of Recovery: '+type+' from '+name
+		window.location.href = 'mailto:example@mail.com?subject='+subject
+	}
+</script>
+
+<style>
+	*{margin:0px;padding:0px}
+
+</style>
+
+</head>
+
+<body>
+    <form onsubmit="formSubmit(this.name.value, this.type.value); return false" method="post" enctype="text/plain">
+	Name:<br>
+	<input type="text" name="name" value="Your Name"><br>		
+	<p>I want to...<br>
+	<input type="radio" name="type" value="Application Question">Apply for Voluenteering<br>
+	<input type="radio" name="type" value="Question">Ask a Question<br>
+	<input type="radio" name="type" value="Comment">Leave a Comment<br>
+	</p>
+	<input type="submit" value="Send">
+	<input type="reset" value="Reset">
+	<span>This will open your mail client.</span>
+	</form>
+
+</body>
+
+</html>
