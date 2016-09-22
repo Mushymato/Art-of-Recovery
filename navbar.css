@@ -1,7 +1,6 @@
 /*floating nav_bar*/
 .main_h {
   position: fixed;
-  top: 0px;
   max-height: 50px;
   z-index: 999;
   width: 100%;

@@ -83,24 +83,6 @@ $(function() {
 			});
 		};
 	});
-	/*toggle pic*/
-	$(".gallery a").click(function(e) {
-		if($("#picture").css("display") == "none"){
-			e.stopPropagation();
-			var imgsrc = $(this).find("img").attr("src");
-			$("#picture img").attr("src", imgsrc);
-			$("#picture").css("display","block");
-			$("#picture").animate({opacity:1});
-		}
-	});
-	$("#picture").click(function() {
-		if($("#picture").css("display") == "block"){
-			$("#picture").animate({opacity:0}, function(){
-				$("#picture").css("display", "none");
-				return false;
-			});
-		};
-	});
 });
 /* $.ajax({
     type: "GET",

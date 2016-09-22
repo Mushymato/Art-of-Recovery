@@ -203,35 +203,6 @@
 	float:right;
 	position:relative
 }
-/*gallery*/
-.gallery{
-	height: 520px;
-}
-.gallery a{
-	height:25%;
-	float:left;
-	z-index:2;
-}
-.gallery img{
-	height:100%;
-	margin:1%;
-}
-#picture{
-	z-index: 4;
-	float:left;
-	position: absolute;
-	top: 10%;
-	left: 0px;
-	height: 100%;
-	width: 100%;
-	display:none;
-	overflow:hidden;
-	opacity: 0;
-	text-align:center;
-}
-#picture img{
-	height: 90%;
-}
 
 /*footer*/
 footer{
