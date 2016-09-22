@@ -11,7 +11,9 @@
   transition: all 0.3s;
   opacity: 0;
   top: -100px;
-  font-family: "Montserrat", sans-serif;
+  font-family: Verdana, Geneva, sans-serif;
+  font-weight: 500;
+
 }
 @media only screen and (max-width: 766px) {
   .main_h {
@@ -115,11 +117,11 @@ nav ul a:hover{
 	-webkit-transition: width 0.4s;
 }
 .contact a:hover{
-	width:150px;
+	width:160px;
 }
 .contact a p{
 	position:relative;
-	width:151px;
+	width:160px;
 	height:50px;
 	transition: left 0.4s;
 	-webkit-transition: left 0.4s;
@@ -133,10 +135,10 @@ nav ul a:hover{
 	vertical-align:middle;
 	margin:3px;
 }
-#fb p{left:-95px;}
-#fb:hover p{left:5px;}
-#email p{left:-95px;}
-#email:hover p{left:5px;}
+#fb p{left:-100px;}
+#fb:hover p{left:10px;}
+#email p{left:-100px;}
+#email:hover p{left:10px;}
 
 
 .mobile-toggle {

@@ -41,7 +41,7 @@ $(function() {
       }
     }
   });
-  $('#show a').click(function() {
+  $('#mission a').click(function() {
 	if ($('#more').prop('visibility') == 'hidden'){
 		$('#more').prop('visibility', 'visible')
 		$('#more').animate({height: '480px'})

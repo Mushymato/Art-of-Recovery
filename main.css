@@ -38,7 +38,8 @@
   line-height: 1;
   color: white;
   text-shadow: 0px 0px 10px #000000;
-  font-family: 'Poiret One', cursive;
+  font-family: "Century Gothic", CenturyGothic, sans-serif;
+  font-weight: 100;
 }
 
 .title h1 span {
@@ -63,7 +64,6 @@
 	color: #000;
 	display: block;
 	letter-spacing: 0px;
-	font-family: "Cardo", serif;
 	box-shadow: 0px 0px 50px  #666666;
 	-webkit-box-shadow: 0px 0px 50px  #666666;
 	position: relative;
@@ -83,7 +83,6 @@
 /*mission statement*/
 #mission{
 	position: relative;
-	top:-20px;
 	text-align: center;
 	line-height: 1.2;
 }
@@ -98,8 +97,8 @@
 	padding:10px 0px;
 }
 #show a{
-	font-family:"Montserrat", sans-serif;
-	font-weight:700;
+	font-family: Verdana, Geneva, sans-serif;
+	font-weight: 900;
 	font-size:20px;
 	text-transform:uppercase;
 	transition:color 0.5s;
@@ -126,13 +125,13 @@
 	color: #fff;
   	font-size: 50px;
   	line-height: 1.8;
-  	font-family: "Montserrat", sans-serif;
+	font-family: Verdana, Geneva, sans-serif;
 }
 .hospital div a{
 	display:block;
 	position:relative;
 	z-index:2;
-	font-family: "Montserrat", sans-serif;
+	font-family: Verdana, Geneva, sans-serif;
 	width: 25%;
 	height: 430px;
 	overflow: hidden;
@@ -146,7 +145,6 @@
 .hospital div a p{
 	text-align: center;
 	line-height:30px;
-	font-weight: 600;
 	position: relative;
 	top: 0px;
 	left: 0px;
@@ -163,7 +161,6 @@
 	float:left;
 	line-height: 12px;
 	font-size: 11px;
-	font-weight: 100;
 	color: white;
 	overflow: hidden;
 	width: 90%;
@@ -241,7 +238,8 @@ footer{
 	text-align:center;
 	font-weight: 300;
   	-webkit-font-smoothing: antialiased;
-    font-family: "Montserrat", sans-serif;
+	font-family: Verdana, Geneva, sans-serif;
+	font-weight: 500;
 }
 footer p{
 	line-height:1.2;
