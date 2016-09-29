@@ -38,22 +38,22 @@ $(function(){
 }
 /*gallery*/
 .gallery{
-	height: 520px;
+	height: 480px;
 }
 .gallery a{
 	height:25%;
 	float:left;
 	z-index:2;
+	display:inline-block;
+	margin:5px;
 }
 .gallery img{
 	height:100%;
-	margin:1%;
 }
 #picture{
 	z-index: 4;
 	float:left;
 	position: absolute;
-	top: 10%;
 	left: 0px;
 	height: 100%;
 	width: 100%;
@@ -61,6 +61,7 @@ $(function(){
 	overflow:hidden;
 	opacity: 0;
 	text-align:center;
+	background-color: white;
 }
 #picture img{
 	height: 90%;
